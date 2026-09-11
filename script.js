@@ -37,19 +37,42 @@ console.log(mdas(5, 3));
 
 const heading = document.querySelector("h1");
 const contactHeading = document.querySelector("#contact h2");
-const projectHeading = document.querySelector("#projects h2");   // Fixed: targets #projects instead of #services
-const servicesHeading = document.querySelector("#services h2"); // Fixed: matching variable spelling
+const projectHeading = document.querySelector("#projects h2");   
+const servicesHeading = document.querySelector("#services h2"); 
 
-// 2. Text Content Updates
+
 heading.textContent = "My Portfolio";
 contactHeading.textContent = "Let's Connect";
 projectHeading.textContent = "Projects";
 servicesHeading.textContent = "Services";
 
-// 3. Styling (Applied directly one-by-one)
+
 heading.style.color = "purple";
 heading.style.backgroundColor = "yellow";
 
 contactHeading.style.color = "purple";
 projectHeading.style.color = "purple";
-servicesHeading.style.color = "purple"; // Fixed: matches the correct variable name
+servicesHeading.style.color = "purple"; 
+
+// event listeners
+
+heading.addEventListener("click",function(){
+    heading.style.color = "red";
+});
+
+const toggleButton = document.querySelector('#switch');
+const body = document.querySelector('body');
+let isOff = false;
+
+toggleButton.addEventListener("click", function () {
+    isOff = !isOff;
+
+    if (isOff) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+    } else {
+
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+    }
+});
