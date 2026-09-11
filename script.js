@@ -36,15 +36,20 @@ console.log(mdas(5, 3));
 //query selector
 
 const heading = document.querySelector("h1");
-
-console.log (heading);
 const contactHeading = document.querySelector("#contact h2");
-console.log(contactHeading);
-const projectHeading = document.querySelector("#services h2");
-console.log(projectHeading);
+const projectHeading = document.querySelector("#projects h2");   // Fixed: targets #projects instead of #services
+const servicesHeading = document.querySelector("#services h2"); // Fixed: matching variable spelling
 
-// text content
-heading.textContent   = "my portfolio";
-contactHeading.textContent   = "lets connect";
-projectHeading.textContent   = "my project";
+// 2. Text Content Updates
+heading.textContent = "My Portfolio";
+contactHeading.textContent = "Let's Connect";
+projectHeading.textContent = "Projects";
+servicesHeading.textContent = "Services";
 
+// 3. Styling (Applied directly one-by-one)
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
+
+contactHeading.style.color = "purple";
+projectHeading.style.color = "purple";
+servicesHeading.style.color = "purple"; // Fixed: matches the correct variable name
