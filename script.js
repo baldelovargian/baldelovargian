@@ -38,11 +38,13 @@ console.log(mdas(5, 3));
 const heading = document.querySelector("h1");
 
 console.log (heading);
-const contact = document.querySelector("#contact h2");
-console.log(contact);
-const services = document.querySelector("#services h2");
-console.log(services);
+const contactHeading = document.querySelector("#contact h2");
+console.log(contactHeading);
+const projectHeading = document.querySelector("#services h2");
+console.log(projectHeading);
 
-
-
+// text content
+heading.textContent   = "my portfolio";
+contactHeading.textContent   = "lets connect";
+projectHeading.textContent   = "my project";
 
