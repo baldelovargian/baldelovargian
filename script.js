@@ -29,4 +29,20 @@ function mdas(num1, num2) {
 
 
 console.log(mdas(5, 3)); 
-    
+
+
+
+
+//query selector
+
+const heading = document.querySelector("h1");
+
+console.log (heading);
+const contact = document.querySelector("#contact h2");
+console.log(contact);
+const services = document.querySelector("#services h2");
+console.log(services);
+
+
+
+
