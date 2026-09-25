@@ -31,9 +31,17 @@ min-width: 300px;
 border: 1px solid black;
 padding:  20px;
 }
+<<<<<<< HEAD
 section [id="projects"]{
     background-color: orange;
 }
+=======
+section[id ="projects"]{
+    background-color:  aqua 
+}
+
+
+>>>>>>> cold-theme
 
 form{
     display: flex;
