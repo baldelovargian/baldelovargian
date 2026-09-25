@@ -31,6 +31,9 @@ min-width: 300px;
 border: 1px solid black;
 padding:  20px;
 }
+section [id="projects"]{
+    background-color: orange;
+}
 
 form{
     display: flex;
@@ -94,3 +97,4 @@ transition: background-color 0.5s ease;
 button:hover{
     background-color: rgb(255, 11, 11);
 }
+
