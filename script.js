@@ -41,23 +41,23 @@ const projectHeading = document.querySelector("#projects h2");
 const servicesHeading = document.querySelector("#services h2"); 
 
 
-heading.textContent = "My Portfolio";
+heading.textContent = "My website";
 contactHeading.textContent = "Let's Connect";
 projectHeading.textContent = "Projects";
 servicesHeading.textContent = "Services";
 
 
-heading.style.color = "purple";
-heading.style.backgroundColor = "yellow";
+heading.style.color = "white";
+heading.style.backgroundColor = "maroon";
 
-contactHeading.style.color = "purple";
-projectHeading.style.color = "purple";
-servicesHeading.style.color = "purple"; 
+contactHeading.style.color = "white";
+projectHeading.style.color = "white";
+servicesHeading.style.color = "white"; 
 
 // event listeners
 
 heading.addEventListener("click",function(){
-    heading.style.color = "red";
+    heading.style.color = "black ";
 });
 
 const toggleButton = document.querySelector('#switch');
@@ -68,11 +68,11 @@ toggleButton.addEventListener("click", function () {
     isOff = !isOff;
 
     if (isOff) {
-        body.style.backgroundColor = "black";
-        body.style.color = "white";
+        body.style.backgroundColor = "blue";
+        body.style.color = "pink";
     } else {
 
-        body.style.backgroundColor = "white";
+        body.style.backgroundColor = "pink";
         body.style.color = "black";
     }
 });

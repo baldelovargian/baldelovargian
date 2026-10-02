@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
-    <link rel="stylesheet" href="style.css">
-<body>
-  
-    <h1>Gian A Baldelovar</h1>
-  <button id="switch">Switch Content</button>
+<body class="r text-center bg-pink-200 min-h-screen"></body>
+
+    <h1 class="max-sm:text-[75px] max-sm:text-red-600">Gian A Baldelovar</h1>
+    
+   
+
+
     <header>
-        <nav>
-            <span>c20245092.baldelovar@csav.edu.ph</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+        <nav class="  text-red-900 flex flex-col gap-[15px] justify-between content-center mx-[50px] sm:flex-row sm:gap-0">
+          
+            <ul class="animate-bounce list-none flex flex-col gap-[15px] p-0 m-0 sm:flex-row">
+                <li>
+                    <a href="#projects" class=" transition-colors duration-500 ease-in-out hover:text-blue-500">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" class="transition-colors duration-500 ease-in-out hover:text-blue-500">Services</a>
+                </li>
+                <li>
+                    <a href="#contact" class="transition-colors duration-500 ease-in-out hover:text-blue-500">Contact Me</a>
+                </li>
+               
             </ul>
+              <span class="animate-bounce">c20245092.baldelovar@csav.edu.ph</span>
         </nav>
     </header>
+<button id="switch" class="bg-violet-900 text-white p-[12px] rounded-[10px] transition-colors duration-500 ease-in-out hover:bg-red-600"> 
+  Switch Content 
+</button> 
+    <h1 class=" animate-pulse text-xl text-white-900  max-sm:text-black-50">
+       "Hello! We help you build better digital products. Explore our work or book a quick call today."
+    </h1>
 
-
-
-
-
-
-
-    <main>
-        <section id="projects">
-            <h2 class="projects">Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
-            </p>
+    <main class="flex flex-wrap gap-[20px] p-[15px] m-[10px] sm:gap-[30px] sm:p-[20px] sm:m-[50px]">
+       
+        <section id="projects" class="flex-1 min-w-0 sm:min-w-[300px] max-sm:flex-[1_1_100%] border border-black p-[15px] sm:p-[20px] bg-violet-500">
+            <h2 class="animate-bounce"max-md:text-[48px] max-md:text-white-600>Projects</h2>
+            <p>"Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.</p>
+    
+        
         </section>
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
+        
+        <section id="services" class="flex-1 min-w-0 sm:min-w-[300px] max-sm:flex-[1_1_100%] border border-black p-[15px] sm:p-[20px] bg-violet-500"> 
+            <h2 class="animate-bounce"max-md:text-[48px] max-md:text-blue-600>My Services</h2>
+            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems Analyst</p>
         </section>
 
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
-            <form action="#">
-                <!-- Name -->
+        
+        <section id="contact" class="flex-1 min-w-0 sm:min-w-[300px] max-sm:flex-[1_1_100%] border border-black p-[15px] sm:p-[20px] bg-violet-500">
+            <h2 class="animate-bounce"max-md:text-[48px] max-md:text-blue-600>Let's build together!</h2>
+            <form action="#" class="flex flex-col gap-[20px]">
+               
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required class="border p-2 rounded">
 
-                <!-- Email -->
+                
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required class="border p-2 rounded">
 
-                <!-- Message -->
+                
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+                <textarea name="message" id="message" rows="1" required class="border p-2 rounded"></textarea>
 
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
+                
+                <button type="submit" class="bg-black text-white p-[12px] rounded-[10px] transition-colors duration-500 ease-in-out hover:bg-[blue]">
+                    Send Message
+                </button>
             </form>
         </section>
     </main>
     
-       <script src="script.js"></script>
+    <script src="script.js"></script>
+<footer class="bg-red-900 text-white mt-[50px] p-[30px] flex flex-col gap-[15px] items-center justify-between sm:flex-row sm:px-[50px]">
+    <p class="m-0 text-sm opacity-80"> 2026 Gian A Baldelovar. All rights reserved.</p>
+
+</footer>
 
 </body>
-
 </html>
